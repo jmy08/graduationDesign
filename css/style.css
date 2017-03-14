@@ -1,0 +1,61 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    color: #333;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+.bgContainer {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.loginContainer {
+    width: 500px;
+    height: 330px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: 220px auto 0;
+    position: relative;
+    box-shadow: 0 5px 5px #355067;
+}
+
+.bgContainer h3 {
+    font-size: 24px;
+    line-height: 35px;
+    color: #dedede;
+    text-align: center;
+    font-weight: normal;
+    transform: translateY(200px);
+}
+
+.ui.j-change1 {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.ui.j-change1 .field label {
+    color: #333;
+}
+
+.ui.form .grouped.j-change2 .field {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background: url(../images/logo-nocolor.png) no-repeat center center;
+    background-size: 120px;
+}

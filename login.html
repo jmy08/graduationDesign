@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bgContainer">
+        <h3>图书馆管理系统登录</h3>
+        <div class="loginContainer">
+            <span class="logo"></span>
+            <form class="ui form segment j-change1">
+                <div class="field">
+                    <label>用户名</label>
+                    <input placeholder="学号、职工号或管理员号" name="username" type="text">
+                </div>
+                <div class="field">
+                    <label>密码</label>
+                    <input name="password" type="password">
+                </div>
+                <div class="inline field">
+                    <div class="ui form">
+                        <div class="grouped fields j-change2">
+                            <div class="field">
+                                <div class="ui slider checkbox">
+                                    <input type="radio" name="throughput" checked="checked">
+                                    <label>用户登录</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui slider checkbox">
+                                    <input type="radio" name="throughput">
+                                    <label>管理员登录</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui primary submit button">登录</div>
+                <input type="reset" class="ui reset button" value="重置">
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/semantic.min.js"></script>
+    <script>
+        $(function() {
+            $('.segment input').click(function() {
+                $('.logo').css({
+                    'background': 'url(images/logo.png) no-repeat center center',
+                    'background-size': '120px'
+                });
+            });
+        })
+    </script>
+
+</body>
+
+</html>
